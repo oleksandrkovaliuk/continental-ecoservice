@@ -1,0 +1,10 @@
+class1{
+  background-color:rgb(0, 169, 253);
+        color:white;
+        font-size: 110%;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.img .imagenwrap{
+  height:100px;
+  width:100px;
+}
