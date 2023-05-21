@@ -1,0 +1,76 @@
+.heads{
+  overflow:hidden;
+  margin:10px;
+  position:relative;
+}
+.left{
+  float:left;
+  font-size:14px;
+  margin-left:15px;
+}
+.right{
+  float:right;
+  display:flex;
+  flex-flow: row nowrap;
+}
+menu{
+  padding:0;
+  margin:0;
+}
+menu ul{
+  padding :0;
+  margin :0;
+  list-style: none;
+  font-size:14px;
+}
+menu li{
+  float:left;
+  margin:16px;
+}
+.link{
+text-decoration:none;
+color:#242424;
+font-family:Arial, Helvetica, sans-serif;
+}
+.class1{
+  padding:0;
+  background-color: #068DAA;
+  font-size:14px;
+  width:100px;
+  height:30px;
+  font-weight:600px;
+  font-size:12px;
+  margin: 9px 0px 0px 15px;
+  border:none;
+  font-family:Montserrat;
+  border-radius: 10px;
+  color:white;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.logo{
+  text-decoration:none;
+  display:flex;
+  color:#068DAA;
+  margin-top:6px;
+  font-size:16px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.logobotton{
+  text-decoration:none;
+  display:flex;
+  color:#068DAA;
+  font-size:16px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.eagle{
+  float:left;
+  height:50px;
+  width:50px;
+  display:flex;
+  margin-right:20px;
+  flex-flow:row nowrap;
+}
+.icon{
+  float:left;
+  top:-200px;
+}
