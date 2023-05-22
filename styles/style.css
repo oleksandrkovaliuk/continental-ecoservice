@@ -1,31 +1,46 @@
 .heads{
-  overflow:hidden;
-  margin:10px;
+  padding:10px;
   position:relative;
+  display:block;
+  justify-content: space-between;
+  background-color:white;
+}
+.clear{
+  clear:both;
 }
 .left{
   float:left;
   font-size:14px;
-  margin-left:15px;
 }
 .right{
   float:right;
   display:flex;
   flex-flow: row nowrap;
 }
-menu{
-  padding:0;
-  margin:0;
+nav{
+margin:0px;
+padding:0px;
 }
-menu ul{
-  padding :0;
-  margin :0;
+nav ul{
   list-style: none;
+}
+nav li{
+  float:left;
+  font-family:Arial, Helvetica, sans-serif;
   font-size:14px;
 }
-menu li{
-  float:left;
-  margin:16px;
+li:not(last-child){
+  margin-right:20px;
+}
+li a:link{
+color:#242424;
+}
+lia:visited{
+  color:#532121;
+}
+li a:hover{
+  color:red;
+  transition: all 0.15s ease-in-out;
 }
 .link{
 text-decoration:none;
@@ -35,23 +50,32 @@ font-family:Arial, Helvetica, sans-serif;
 .class1{
   padding:0;
   background-color: #068DAA;
-  font-size:14px;
   width:100px;
   height:30px;
-  font-weight:600px;
-  font-size:12px;
   margin: 9px 0px 0px 15px;
   border:none;
   font-family:Montserrat;
   border-radius: 10px;
+}
+.class1 a{
   color:white;
+  text-decoration:none;
+  font-weight:600;
   font-family:Arial, Helvetica, sans-serif;
+  font-size:14px;
+}
+.class1:hover{
+  background-color: #035264;
+  transition: all 0.15s ease-in-out;
+}
+.class1 a:hover{
+  color:black;
+  transition: all 0.15s ease-in-out;
 }
 .logo{
   text-decoration:none;
-  display:flex;
+  display:inline-block;
   color:#068DAA;
-  margin-top:6px;
   font-size:16px;
   font-family:Arial, Helvetica, sans-serif;
 }
@@ -69,8 +93,4 @@ font-family:Arial, Helvetica, sans-serif;
   display:flex;
   margin-right:20px;
   flex-flow:row nowrap;
-}
-.icon{
-  float:left;
-  top:-200px;
 }
