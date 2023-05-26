@@ -102,7 +102,6 @@ table{
 }
 th , td{
 padding: 10px;
-align-items: center;
 }
 th{
   background-color: orange;
@@ -110,4 +109,14 @@ th{
 tr:hover{
   background-color:rgb(246, 211, 146);
   transition: all 0.5s ease-in-out;
+}
+.table2{
+  width: 600px;
+}
+.second , .secondth{
+  padding:10px;
+}
+.secondth{
+  background-color: orange;
+  color:white;
 }
