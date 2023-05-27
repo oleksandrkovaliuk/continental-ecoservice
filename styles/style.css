@@ -1,15 +1,20 @@
 @font-face {
   font-family: Roboto;
-  src:url('Roboto-Regular.ttf');
+  src:url('../fonts/Roboto-Bold.ttf');
 }
 @font-face {
   font-family: Robotothin;
-  src:url('Roboto-thin.ttf');
+  src:url('../fonts/Roboto-Thin.ttf');
 }
 @font-face {
   font-family:Robotobold;
-  src:url('Roboto-Bold.ttf');
+  src:url('../fonts/Roboto-Regular.ttf');
+
 }
+@font-face {
+    font-family:Robotoi;
+    src:url('../fonts/Roboto-Italic.ttf');
+  }
 body{
   background-image: url(img/icon.jpg);
   background-repeat: no-repeat;
@@ -131,4 +136,20 @@ tr:hover{
 .secondth{
   background-color: orange;
   color:white;
+}
+p{
+  font-family:Robotobold;
+  font-weight:500;
+}
+.p{
+  font-family:Robotoi;
+  font-weight:700;
+}
+.p2{
+  font-family:Roboto;
+  font-weight:800;
+}
+.p3{
+  font-family:Robotothin;
+  font-weight:100;
 }
