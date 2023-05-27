@@ -1,3 +1,15 @@
+@font-face {
+  font-family: Roboto;
+  src:url('Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: Robotothin;
+  src:url('Roboto-thin.ttf');
+}
+@font-face {
+  font-family:Robotobold;
+  src:url('Roboto-Bold.ttf');
+}
 body{
   background-image: url(img/icon.jpg);
   background-repeat: no-repeat;
@@ -28,7 +40,7 @@ nav ul{
 }
 nav li{
   display:inline-block;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:Robotobold;
   font-size:14px;
 }
 li:not(:last-child){
