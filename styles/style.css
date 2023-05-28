@@ -1,23 +1,18 @@
-@font-face {
-  font-family: Roboto;
-  src:url('../fonts/Roboto-Bold.ttf');
+*{
+  box-sizing:border-box;
 }
-@font-face {
-  font-family: Robotothin;
-  src:url('../fonts/Roboto-Thin.ttf');
+:root {
+  --font-helvetica: 'Lato', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+  --logo-color: #068DAA;
+  --hover-color:#035264;
+  --linkh-color:red;
+  --link-color:#242424;
 }
-@font-face {
-  font-family:Robotobold;
-  src:url('../fonts/Roboto-Regular.ttf');
-
-}
-@font-face {
-    font-family:Robotoi;
-    src:url('../fonts/Roboto-Italic.ttf');
-  }
 body{
   background-image: url(img/icon.jpg);
   background-repeat: no-repeat;
+  font-family:var(--font-roboto)
 }
 .heads{
   position:relative;
@@ -45,7 +40,6 @@ nav ul{
 }
 nav li{
   display:inline-block;
-  font-family:Robotobold;
   font-size:14px;
 }
 li:not(:last-child){
@@ -58,34 +52,31 @@ li a:visited{
   color:black;
 }
 li a:hover{
-  color:red;
+  color:var(--linkh-color);
   font-size:16px;
   transition: all 0.5s ease-in-out;
 }
 .link{
 text-decoration:none;
-color:#242424;
-font-family:Arial, Helvetica, sans-serif;
+color:var(--link-color);
 }
 .class1{
   padding:0;
-  background-color: #068DAA;
+  background-color:var(--hover-color);
   width:100px;
   height:30px;
   margin: 9px 0px 0px 15px;
   border:none;
-  font-family:Montserrat;
   border-radius: 10px;
 }
 .class1 a{
   color:white;
   text-decoration:none;
   font-weight:600;
-  font-family:Arial, Helvetica, sans-serif;
   font-size:14px;
 }
 .class1:hover{
-  background-color: #035264;
+  background-color:var(--logo-color);
   transition: all 0.15s ease-in-out;
 }
 .class1 a:hover{
@@ -95,16 +86,14 @@ font-family:Arial, Helvetica, sans-serif;
 .logo{
   text-decoration:none;
   display:inline-block;
-  color:#068DAA;
+  color:var(--logo-color);
   font-size:16px;
-  font-family:Arial, Helvetica, sans-serif;
 }
 .logobotton{
   text-decoration:none;
   display:flex;
-  color:#068DAA;
+  color:var(--logo-color);
   font-size:16px;
-  font-family:Arial, Helvetica, sans-serif;
 }
 .eagle{
   float:left;
@@ -138,18 +127,15 @@ tr:hover{
   color:white;
 }
 p{
-  font-family:Robotobold;
   font-weight:500;
 }
 .p{
-  font-family:Robotoi;
   font-weight:700;
 }
 .p2{
-  font-family:Roboto;
   font-weight:800;
 }
 .p3{
-  font-family:Robotothin;
+  font-style:italic;
   font-weight:100;
 }
