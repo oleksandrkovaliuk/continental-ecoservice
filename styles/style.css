@@ -129,6 +129,12 @@ tr:hover{
 p{
   font-weight:500;
 }
+div p::first-letter{
+  font-size:60px;
+}
+div p::first-line{
+  font-style:italic;
+}
 .p{
   font-weight:700;
 }
