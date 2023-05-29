@@ -19,9 +19,6 @@ body{
   display:block;
   justify-content: space-between;
 }
-.clear{
-  clear:both;
-}
 .left{
   float:left;
   font-size:14px;
@@ -99,7 +96,6 @@ color:var(--link-color);
   float:left;
   height:50px;
   width:50px;
-  display:flex;
   margin-right:20px;
   flex-flow:row nowrap;
 }
