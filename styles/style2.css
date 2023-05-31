@@ -46,14 +46,6 @@ li a{
     font-family:var(--font-Montserrat);
     color:var(--text-color24);
 }
-.text{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 32px;
-    margin: 212px 1080px 548px 240px ;
-}
 .number{
     font-family:var(--font-OpenSans);
     font-weight: 400;
@@ -75,15 +67,13 @@ li a{
     height: 44px;
 }
 .text{
-    display: flex;
+    display:flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
     gap: 32px;
-    margin:212px 1008px 472px 240px;
-}
-.imgcovid{
-    margin:89px 64px 0 240px;
+    margin:225px 240px 472px 240px;
+
 }
 .textdez{
     font-family:var(--font-RobotoSlab);
@@ -117,14 +107,15 @@ li a{
     font-weight:600;
     font-size:12px;
 }
-.bg{
-    position: absolute;
+menu{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 64px;
+}
+div img{
     width: 704px;
-    height: 801.44px;
-    left: 1152px;
-    top: 0px;
-    background:url(./img/COVID19-Disinfection\ 1.jpg);
-    margin-top: 150px;
-
+    Height:801.44px;
 }
 
