@@ -10,7 +10,9 @@
 *{
     box-sizing:border-box;
     margin:0px;
+    padding:0px;
 }
+
 body{
     background-image: url(img/icon.jpg);
     background-repeat: no-repeat;
@@ -44,6 +46,14 @@ li a{
     font-family:var(--font-Montserrat);
     color:var(--text-color24);
 }
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    margin: 212px 1080px 548px 240px ;
+}
 .number{
     font-family:var(--font-OpenSans);
     font-weight: 400;
@@ -64,14 +74,13 @@ li a{
     width: 145px;
     height: 44px;
 }
-menu{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-}
 .text{
-    margin-left:240px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    margin:212px 1008px 472px 240px;
 }
 .imgcovid{
     margin:89px 64px 0 240px;
@@ -82,7 +91,6 @@ menu{
     font-size:64px;
     line-height:64px;
     color:var(--text-color24);
-    margin-bottom:32px;
 }
 .dez{
     font-family:var(--font-RobotoSlab);
@@ -97,7 +105,6 @@ menu{
     font-size:16px;
     line-height: 28px;
     color:var(--text-color24);
-    margin-bottom:32px;
 }
 .services{
     padding: 16px 24px;
@@ -109,5 +116,15 @@ menu{
     font-family:var(--font-OpenSans);
     font-weight:600;
     font-size:12px;
+}
+.bg{
+    position: absolute;
+    width: 704px;
+    height: 801.44px;
+    left: 1152px;
+    top: 0px;
+    background:url(./img/COVID19-Disinfection\ 1.jpg);
+    margin-top: 150px;
+
 }
 
