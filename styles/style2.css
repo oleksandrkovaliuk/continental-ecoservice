@@ -6,6 +6,7 @@
     --text-color: #FDFDFD;
     --button-color:#068DAA;
     --secondbut-color:#C8E5EB;
+    --circle-color:#ECECEC;
 }
 *{
     box-sizing:border-box;
@@ -67,12 +68,24 @@ li a{
     height: 44px;
 }
 .text{
+    position:absolute;
+    top: 288px;
+    left:240px;
+    bottom:472px;
     display:flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 32px;
-    margin:225px 240px 472px 240px;
+    align-items:flex-start;
+    width:672px;
+    height: 320px;
+    gap:32px;
+    margin-right:240px;
+}
+.imgtext{
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 0px;
 
 }
 .textdez{
@@ -92,13 +105,13 @@ li a{
 .textunderdez{
     font-family:var(--font-OpenSans);
     font-weight: 300;
+    font-style: normal;
     font-size:16px;
     line-height: 28px;
     color:var(--text-color24);
 }
 .services{
     padding: 16px 24px;
-    gap: 10px;
     background-color:var(--secondbut-color);
     border: 1px solid #C8E5EB;
     border-radius: 4px;
@@ -107,15 +120,63 @@ li a{
     font-weight:600;
     font-size:12px;
 }
-menu{
+.allmenu{
+    margin-left:64px;
+    margin-top:76px;
+    margin-right:64px;
+}
+menu div{
     display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 64px;
+    gap:62px;
+    flex-direction:row;
+    align-items:center;
+    gap:64px;
 }
-div img{
-    width: 704px;
-    Height:801.44px;
+.textunder{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    align-items:flex-start;
+    gap:24px;
 }
+.imgmask{
+    position:absolute;
+    top:794px;
+    bottom:106px;
+    width: 687px;
+    height: 180px;
+}
+.dezunder{
+    font-family:var(--font-RobotoSlab);
+    font-weight: 400;
+    font-size:40px;
+    line-height:24px;
+}
+.destroymicrob{
+    font-family:var(--font-OpenSans);
+    font-weight:300;
+    font-size:16px;
+    line-height:16px;
+}
+.more{
+    font-family:var(--font-OpenSans);
+    font-style:normal;
+    font-weight:400px;
+    font-size:20px;
+    line-height:20px;
+    text-decoration-line: underline;
+}
+.vector{
+    gap:62px;
+}
+.left1{
+    border:1px solid var(--circle-color);
+    border-radius:64px;
+    padding: 16px;
 
+}
+.right1{
+    border:1px solid var(--circle-color);
+    border-radius:64px;
+    padding: 16px;
+}
