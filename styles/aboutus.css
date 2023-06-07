@@ -1,0 +1,107 @@
+:root{
+    --font-Montserrat: 'Montserrat' , sans-serif;
+    --font-OpenSans: 'Open Sans' , sans-serif;
+    --font-RobotoSlab: 'Roboto Slab' , sans-serif;
+    --text-color24: #242424;
+    --text-color: #FDFDFD;
+    --button-color:#068DAA;
+    --secondblue-color:#C8E5EB;
+    --circle-color:#ECECEC;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background-image: url(../svg/icon.svg);
+    background-repeat: no-repeat;
+    background-color:var(--text-color);
+    z-index:7;
+}
+img{
+        display:block;
+        max-width:100%;
+}
+header{
+    position:sticky;
+    padding-block:20px;
+    top:0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:24px auto 0;
+    max-width:1920px;
+    padding-inline: 64px;
+    z-index:4;
+}
+.headwrap{
+    display:flex;
+    gap: 0 40px;
+    align-items:center;
+}
+.headmenu{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type:none;
+    gap:32px;
+}
+.headmenu li{
+    display: inline-block;
+}
+.headmenu li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    font-family:var(--font-Montserrat);
+    color:var(--text-color24);
+}
+.number{
+    display:flex;
+    align-items:center;
+    font-family:var(--font-OpenSans);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color:var(--text-color24);
+    padding-left:40px;
+    border-left:1px solid #ECECEC;
+    height:36px;
+}
+.order{
+    background-color: var(--button-color);
+    border: 1px solid #068DAA;
+    border-radius: 4px;
+    font-family:var(--font-OpenSans);
+    color:var(--text-color);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    width: 145px;
+    height: 44px;
+    transition: all 0.3s ease-in;
+}
+.mainwrap{
+    display:flex;
+    margin-top:174px;
+    padding-inline:64px;
+}
+.aboutus{
+    justify-content: flex-end;
+    align-items: center;
+    margin-left:auto;
+    margin-right:167px;
+    max-width:462px;
+    min-height:215px;
+}
+.mainimgwrap{
+    display:flex;
+}
