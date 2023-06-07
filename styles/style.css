@@ -216,7 +216,7 @@ main{
 }
 .vector .arrow_icon:hover rect{
     stroke:var(--button-color);
-    transition: 0.5s all ;
+    transition: transform 0.3s ease-in;
 }
 .secondpage{
     max-width: 1920px;
