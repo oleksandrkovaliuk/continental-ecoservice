@@ -17,8 +17,6 @@
 }
 
 body{
-    background-image: url(../svg/icon.svg);
-    background-repeat: no-repeat;
     background-color:var(--text-color);
     z-index:7;
 }
@@ -31,6 +29,7 @@ header{
     padding-block:20px;
     top:0;
     display:flex;
+    background-color:var(--text-color);
     justify-content: space-between;
     align-items: center;
     margin:24px auto 0;
@@ -120,6 +119,7 @@ main{
     line-height: 12px;
     width: 145px;
     height: 44px;
+    cursor: pointer;
 }
 .underhead{
     display:flex;
@@ -130,7 +130,7 @@ main{
     justify-content: space-between;
     gap:32px;
     margin-inline:auto;
-    margin-bottom: 90px;
+    margin-bottom: 140px;
 }
 .mainwrap{
     flex-grow:1;
@@ -187,6 +187,7 @@ main{
     font-family:var(--font-OpenSans);
     font-weight:600;
     font-size:12px;
+    cursor: pointer;
 }
 .imgmask{
     display:flex;
@@ -231,16 +232,69 @@ main{
     font-size:20px;
     line-height:20px;
     text-decoration-line: underline;
+    cursor: pointer;
 }
 .vector{
     display:flex;
     gap:10px;
     flex-shrink:0;
-
+    cursor: pointer;
 }
 .vector .arrow_icon:hover rect{
     stroke:var(--button-color);
     transition: transform 0.3s ease-in;
+}
+.pagebetween{
+    padding-inline:64px;
+    max-width:1920px;
+    margin-bottom:140px;
+}
+.pagebetweenwrap{
+    display:flex;
+    border:1px solid #C8E5EB;
+    padding-block:66px;
+    margin-left:64px;
+}
+.pagebetweenwrap img{
+    margin-left:-64px;
+}
+.textpagebetween{
+    display:flex;
+    flex-direction:column;
+    margin-left:142px;
+    align-items:flex-start;
+    gap:32px;
+    margin-top:66px;
+    max-width: 560px;
+}
+.textpb{
+    font-family:var(--font-RobotoSlab);
+    font-weight:400;
+    font-size:40px;
+    line-height:52px;
+    color:var(--text-color24);
+}
+.intxtpb{
+    font-family:var(--font-RobotoSlab);
+    font-weight:400;
+    font-size:40px;
+    line-height:52px;
+    color:var(--button-color);
+}
+.undertxtpb{
+    font-family:var(--font-OpenSans);
+    font-weight:300;
+    font-size:16px;
+    line-height:32px;
+    color:var(--text-color24);
+}
+.moreintxtpb{
+    font-family:var(--font-OpenSans);
+    font-weight:400;
+    font-size:20px;
+    text-decoration-line: underline;
+    color:var(--text-color24);
+    cursor: pointer;
 }
 .secondpage{
     max-width: 1920px;
@@ -255,6 +309,7 @@ main{
     padding-inline: 64px;
     justify-content: center;
     gap: 56px;
+    cursor: pointer;
 }
 .p2textup{
     display:flex;
@@ -453,6 +508,7 @@ main{
     background-color:transparent;
     border:1px solid var(--button-color);
     border-radius:4px;
+    cursor: pointer;
 }
 .txtour{
     font-family:var(--font-RobotoSlab);
