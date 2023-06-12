@@ -17,7 +17,13 @@
 <body>
   <header>
     <img class="logo" src="./svg/logo.svg" alt="logo">
-    <div class="headwrap">
+    <div class="mobile-menu">
+      <button class="order order-btn">Звязатись</button>
+      <button class="burger">
+        <img src="./svg/burger.svg">
+        </button>
+    </div>
+    <div class="headwrap mobile-full-menu">
       <ul class="headmenu">
         <li><a href="file:///C:/Users/15879/Desktop/test-github/aboutus.html">Про нас</a></li>
         <li><a href="#">Послуги</a></li>
@@ -26,19 +32,16 @@
       <a class="number" href="#">+380997882668</a>
       <button class="order">Замовити послугу</button>
       <button class="order2">Звязатись</button>
-      <a class="burger">
-        <img src="./svg/burger.svg">
-      </a>
-      <a class="burger2">
+      <button class="burger2">
         <img src="./svg/x.svg">
-      </a>
+      </button>
     </div>
   </header>
   <main>
     <div class="underhead">
       <div class="mainwrap">
         <div class="maininfo">
-          <h1 class="textmaininfo"><b class="dez">Дез</b>інфекція вашого приміщення</h1>
+          <h1 class="textmaininfo"><b>Дез</b>інфекція вашого приміщення</h1>
           <h3 class="textmaininfounder">Компанія Континентал Екосервіс займається дератизацією, дезінсекцією (знищення
             тарганів та інших комах, щурів, мишей), дезінфекцією приміщень (знищення бактерій, грибків, вірусів, цвілі).
             </h2>
@@ -343,6 +346,19 @@
     </div>
     </div>
   </main>
+  <script> 
+    const menu = document.querySelector('.mobile-full-menu'); 
+    const burger = document.querySelector('.burger'); 
+    const burger2 = document.querySelector('.burger2'); 
+ 
+    burger.addEventListener('click', () => { 
+      menu.style = 'display: flex'; 
+    }); 
+    burger2.addEventListener('click', () => { 
+      menu.style = 'display: none'; 
+    }); 
+ 
+  </script>
 </body>
 
 </html>
