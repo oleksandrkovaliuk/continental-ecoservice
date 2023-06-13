@@ -839,11 +839,10 @@ g,
 
   .maininfo {
     display: flex;
-    margin-right: auto;
-    margin-bottom: 96px;
     padding-left: 0px;
-    margin-top: 96px;
-    margin-left: 32px;
+    margin: 0px;
+    margin-inline: auto;
+    margin-bottom: 96px;
   }
 
   .textmaininfo {
