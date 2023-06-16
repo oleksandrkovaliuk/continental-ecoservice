@@ -541,6 +541,7 @@ footer h1 {
   }
 
   .headwrap {
+    display:none;
     position: fixed;
     left: 0;
     top: 0;
@@ -570,7 +571,7 @@ footer h1 {
     position: absolute;
     background: transparent;
     border: none;
-    top: 24px;
+    top: 48px;
     right: 14px;
   }
 
