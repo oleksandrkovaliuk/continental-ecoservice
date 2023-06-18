@@ -26,17 +26,24 @@ img {
 }
 
 header {
+    top: 0;
+    z-index: 1080;
     position: sticky;
-    padding-block: 20px;
-    top: 24px;
+    padding-inline: 64px;
+    box-shadow: 0 2px 5px 1px #ddd;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+header .header-wrap {
     display: flex;
-    background-color: var(--text-color);
+    padding-top: 24px;
+    padding-block: 20px;
     justify-content: space-between;
     align-items: center;
-    margin: 24px auto 0;
+    margin-inline: auto;
     max-width: 1920px;
-    padding-inline: 64px;
-    z-index: 4;
+    
+    
     margin-bottom: 128px;
 }
 
@@ -262,11 +269,13 @@ header {
 
 .company-img {
     display: flex;
-    border-right: 1px solid var(--secondblue-color);
-    border-width: 1px;
     height: 56px;
     padding-inline: 56px;
     align-items: center;
+}
+
+.company-img:not(:last-child) {
+    border-right: 1px solid var(--secondblue-color);
 }
 
 .logo41 {
@@ -479,26 +488,30 @@ footer h1 {
     line-height: 20px;
     color: var(--text-color24);
 }
+
 .order2 {
     display: none;
-  }
-  
-  .burger2 {
+}
+
+.burger2 {
     display: none;
-  }
-  .mobile-menu{
-    display:none;
-  }
+}
+
+.mobile-menu {
+    display: none;
+}
 
 
 @media (max-width:1080px) {
-    header{
+    header {
         margin-bottom: 0px;
-    padding-inline: 14px;
+        padding-inline: 14px;
     }
+
     .logo {
         max-width: 107px;
-      }
+    }
+
     .headmenu {
         font-family: var(--font-Montserrat);
         flex-direction: column;
@@ -508,43 +521,49 @@ footer h1 {
         row-gap: 48px;
         font-size: 24px;
         line-height: 26px;
-      }
+    }
+
     .headwrap {
         position: fixed;
         left: 0;
         top: 0;
         bottom: 0;
         right: 0;
+        display: none;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding-inline: 24px;
         padding-bottom: 24px;
         background-color: white;
-    
-      }
-    .number{
-        display:none;
+
     }
-      .burger {
+
+    .number {
+        display: none;
+    }
+
+    .burger {
         display: block;
         background: transparent;
         border: none;
-      }
-    
-      .burger2 {
+    }
+
+    .burger2 {
         display: block;
         position: absolute;
         background: transparent;
         border: none;
         top: 24px;
         right: 14px;
-      }
-      .order {
+    }
+
+    .order {
         width: 100%;
         height: 44px;
         margin-bottom: 16px;
-      }
+    }
+
     .order2 {
         display: block;
         width: 100%;
@@ -553,196 +572,225 @@ footer h1 {
         border: 1px solid #C8E5EB;
         border-radius: 4px;
         color: var(--button-color);
-    
-      }
-    
-      .mobile-menu {
+
+    }
+
+    .mobile-menu {
         display: flex;
         align-items: center;
         column-gap: 12px;
-      }
-    
-      .mobile-menu .order-btn {
+    }
+
+    .mobile-menu .order-btn {
         width: 83px;
         height: 28px;
         margin-bottom: 0px;
-      }
-      .first-section-wrap {
+    }
+
+    .first-section-wrap {
         flex-direction: column;
-        align-items:center;
+        align-items: center;
         margin-bottom: 178px;
-        }
-        .about-us{
-            text-align: center;
-            margin-right: 0px;
-            align-items: center;
-            margin-bottom: 64px;
-        }
-        .second-section-block{
-            flex-wrap: wrap;
-    justify-content: center;
-    margin-inline: none;
-    row-gap: 30px;
-    column-gap: 80px;
-    margin-inline: auto;
-    text-align: center;
-        }
-        .text-in-block{
-            align-items: center;
-        }
-        .text-in-block-wrap{
-            align-items:center;
-        }
-        .third-section-company{
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: center;
-            row-gap: 40px;
-        }
+    }
+
+    .about-us {
+        text-align: center;
+        margin-right: 0px;
+        align-items: center;
+        margin-bottom: 64px;
+    }
+
+    .second-section-block {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-inline: none;
+        row-gap: 30px;
+        column-gap: 80px;
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    .text-in-block {
+        align-items: center;
+    }
+
+    .text-in-block-wrap {
+        align-items: center;
+    }
+
+    .third-section-company {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        row-gap: 40px;
+    }
 }
-@media(max-width:768px){
-.first-img-wrap{
-    justify-content: center;
+
+@media(max-width:768px) {
+    .first-img-wrap {
+        justify-content: center;
+    }
+
+    .first-img-wrap {
+        justify-content: center;
+        gap: 8px
+    }
+
+    .img-left {
+        width: 80px;
+        height: 80px;
+    }
+
+    .img-middle {
+        max-width: 148px;
+    }
+
+    .img-right {
+        width: 80px;
+        height: 80px;
+    }
 }
-.first-img-wrap{
-    justify-content: center;
-    gap: 8px
-}
-.img-left{
-    width: 80px;
-    height: 80px;
-}
-.img-middle{
-    max-width: 148px;
-}
-.img-right{
-    width: 80px;
-    height: 80px;
-}
-}
-@media(max-width:320px){
-    header{
+
+@media(max-width:320px) {
+    header {
         margin-top: 0px;
         top: 10px;
         margin-bottom: 56px;
     }
-    .first-section-wrap{
+
+    .first-section-wrap {
         padding: 0px;
-    margin-bottom: 64px;
+        margin-bottom: 64px;
     }
-    .about-us{
+
+    .about-us {
         padding-inline: 20px;
     }
-    .about-us-txt{
+
+    .about-us-txt {
         font-size: 24px;
         line-height: 24px;
     }
-    .about-us-txt-inside{
+
+    .about-us-txt-inside {
         font-size: 14px;
         line-height: 28px;
     }
-    .first-img-wrap{
+
+    .first-img-wrap {
         justify-content: center;
         gap: 8px
     }
-    .img-left{
+
+    .img-left {
         width: 80px;
         height: 80px;
     }
-    .img-middle{
+
+    .img-middle {
         max-width: 148px;
     }
-    .img-right{
+
+    .img-right {
         width: 80px;
         height: 80px;
     }
-    .second-section{
-        margin-bottom: 80px;  
+
+    .second-section {
+        margin-bottom: 80px;
     }
-    .second-section-block{
+
+    .second-section-block {
         padding-inline: 24px;
     }
-    .third-section{
+
+    .third-section {
         margin-bottom: 100px;
     }
-    .third-section-text{
+
+    .third-section-text {
         margin-bottom: 49px;
     }
-    .thrd-section-top{
+
+    .thrd-section-top {
         font-size: 24px;
         line-height: 52px;
     }
-    .thrd-section-under{
+
+    .thrd-section-under {
         font-size: 14px;
         line-height: 24px
     }
-    .third-section-company{
+
+    .third-section-company {
         flex-direction: column;
     }
-    .company-img{
+
+    .company-img {
         justify-content: center;
-    align-items: center;
-    border:none;
+        align-items: center;
+        border: none;
     }
+
     .fourthsection {
         border: none;
-      }
-    
-      .fourthpagewrap {
+    }
+
+    .fourthpagewrap {
         flex-direction: column-reverse;
-      }
-    
-      .ourcontacts {
+    }
+
+    .ourcontacts {
         text-align: center;
         align-items: center;
         margin-bottom: 72px;
         padding-inline: 12px;
-      }
-    
-      .txtour {
+    }
+
+    .txtour {
         font-size: 24px;
         line-height: 52px;
         margin-bottom: 32px;
-      }
-    
-      .txtour b {
+    }
+
+    .txtour b {
         font-size: 24px;
         line-height: 52px;
-      }
-    
-      .schedule {
+    }
+
+    .schedule {
         margin-bottom: 32px;
-      }
-    
-      .txtdays {
+    }
+
+    .txtdays {
         font-size: 20px;
         line-height: 32px;
-      }
-    
-      .txtcity {
+    }
+
+    .txtcity {
         font-size: 20px;
         line-height: 32px;
-      }
-    
-      .txtnum {
+    }
+
+    .txtnum {
         font-size: 20px;
         line-height: 32px;
-      }
-    
-      .txtemail {
+    }
+
+    .txtemail {
         font-size: 20px;
         line-height: 32px;
-      }
-    
-      .numemail {
+    }
+
+    .numemail {
         margin-bottom: 40px;
-      }
-    
-      .orderbutunder {
+    }
+
+    .orderbutunder {
         width: 100%;
-      }
-    
-      .circles {
+    }
+
+    .circles {
         max-width: 192px;
         display: flex;
         align-items: center;
@@ -753,5 +801,5 @@ footer h1 {
         margin-inline: auto;
         flex-direction: row;
         row-gap: 86px;
-      }
+    }
 }
