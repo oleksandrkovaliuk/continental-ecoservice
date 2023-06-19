@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/main.css">
   <title>Continental Ecoservice</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,25 +17,29 @@
 
 <body>
   <header>
-    <img class="logo" src="./svg/logo.svg" alt="logo">
-    <div class="mobile-menu">
-      <button class="order order-btn">Звязатись</button>
-      <button class="burger">
-        <img src="./svg/burger.svg">
+    <div class="header-wrap">
+      <a class="logo" href="./index.html">
+        <img src="./svg/logo.svg" alt="logo">
+      </a>
+      <div class="mobile-menu">
+        <button class="order order-btn">Звязатись</button>
+        <button class="burger">
+          <img src="./svg/burger.svg">
         </button>
-    </div>
-    <div class="headwrap mobile-full-menu">
-      <ul class="headmenu">
-        <li><a href="./Aboutus.html">Про нас</a></li>
-        <li><a href="./service.html">Послуги</a></li>
-        <li><a href="#contacts">Контакти</a></li>
-      </ul>
-      <a class="number" href="#">+380997882668</a>
-      <button class="order">Замовити послугу</button>
-      <button class="order2">Звязатись</button>
-      <button class="burger2">
-        <img src="./svg/x.svg">
-      </button>
+      </div>
+      <div class="headwrap mobile-full-menu">
+        <ul class="headmenu">
+          <li><a href="./Aboutus.html">Про нас</a></li>
+          <li><a href="./service.html">Послуги</a></li>
+          <li><a href="#contacts">Контакти</a></li>
+        </ul>
+        <a class="number" href="#">+380997882668</a>
+        <button class="order">Замовити послугу</button>
+        <button class="order2">Звязатись</button>
+        <button class="burger2">
+          <img src="./svg/x.svg">
+        </button>
+      </div>
     </div>
   </header>
   <main>
@@ -346,18 +351,18 @@
     </div>
     </div>
   </main>
-  <script> 
-    const menu = document.querySelector('.mobile-full-menu'); 
-    const burger = document.querySelector('.burger'); 
-    const burger2 = document.querySelector('.burger2'); 
- 
-    burger.addEventListener('click', () => { 
-      menu.style = 'display: flex'; 
-    }); 
-    burger2.addEventListener('click', () => { 
-      menu.style = 'display: none'; 
-    }); 
- 
+  <script>
+    const menu = document.querySelector('.mobile-full-menu');
+    const burger = document.querySelector('.burger');
+    const burger2 = document.querySelector('.burger2');
+
+    burger.addEventListener('click', () => {
+      menu.style = 'display: flex';
+    });
+    burger2.addEventListener('click', () => {
+      menu.style = 'display: none';
+    });
+
   </script>
 </body>
 
