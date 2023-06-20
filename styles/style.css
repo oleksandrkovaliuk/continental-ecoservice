@@ -596,6 +596,7 @@ main {
     padding-inline: 24px;
     padding-bottom: 24px;
     background-color: white;
+    z-index:6;
 
   }
 
