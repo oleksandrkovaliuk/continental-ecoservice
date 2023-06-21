@@ -1,131 +1,3 @@
-<<<<<<< HEAD
-=======
-:root {
-    --font-Montserrat: 'Montserrat', sans-serif;
-    --font-OpenSans: 'Open Sans', sans-serif;
-    --font-RobotoSlab: 'Roboto Slab', sans-serif;
-    --text-color24: #242424;
-    --text-color: #FDFDFD;
-    --button-color: #068DAA;
-    --secondblue-color: #C8E5EB;
-    --circle-color: #ECECEC;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-}
-
-body {
-    background-color: var(--text-color);
-    z-index: 7;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-}
-
-header {
-    top: 0;
-    z-index: 1080;
-    position: sticky;
-    padding-inline: 64px;
-    box-shadow: 0 2px 5px 1px #ddd;
-    background-color: rgba(255, 255, 255, 0.6);
-}
-
-header .header-wrap {
-    display: flex;
-    padding-top: 24px;
-    padding-block: 20px;
-    justify-content: space-between;
-    align-items: center;
-    margin-inline: auto;
-    max-width: 1920px;
-    
-    
-    margin-bottom: 128px;
-}
-
-.headwrap {
-    display: flex;
-    gap: 0 40px;
-    align-items: center;
-}
-
-.logo {
-    cursor: pointer;
-}
-
-.headmenu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style-type: none;
-    gap: 32px;
-}
-
-.headmenu li {
-    display: inline-block;
-}
-
-.headmenu li a {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 25px;
-    font-family: var(--font-Montserrat);
-    color: var(--text-color24);
-}
-
-.number {
-    display: flex;
-    align-items: center;
-    font-family: var(--font-OpenSans);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: var(--text-color24);
-    padding-left: 40px;
-    border-left: 1px solid #ECECEC;
-    height: 36px;
-}
-
-.order {
-    background-color: var(--button-color);
-    border: 1px solid #068DAA;
-    border-radius: 4px;
-    font-family: var(--font-OpenSans);
-    color: var(--text-color);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 12px;
-    width: 145px;
-    height: 44px;
-    transition: all 0.3s ease-in;
-}
-
-.order:hover {
-    background-color: transparent;
-    border: 1px solid #068DAA;
-    border-radius: 4px;
-    font-family: var(--font-OpenSans);
-    color: var(--button-color);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 12px;
-    width: 145px;
-    height: 44px;
-    cursor: pointer;
-}
->>>>>>> 9516f346f0e55024267daf615f7d845f9a1a819b
 
 .first-section-wrap {
     display: flex;
@@ -283,10 +155,6 @@ header .header-wrap {
     border-right: 1px solid var(--secondblue-color);
 }
 
-.company-img:not(:last-child) {
-    border-right: 1px solid var(--secondblue-color);
-}
-
 .logo41 {
     min-height: 77px;
 }
@@ -323,13 +191,6 @@ footer h1 {
 .burger2 {
     display: none;
 }
-<<<<<<< HEAD
-=======
-
-.mobile-menu {
-    display: none;
-}
->>>>>>> 9516f346f0e55024267daf615f7d845f9a1a819b
 
 .mobile-menu {
     display: none;
@@ -349,20 +210,13 @@ footer h1 {
     }
 }
 @media (max-width:1080px) {
-<<<<<<< HEAD
     header .header-wrap {
         margin-bottom: 0px;
         padding-inline: 14px;
     }
     header::after{
         position:static;
-=======
-    header {
-        margin-bottom: 0px;
-        padding-inline: 14px;
->>>>>>> 9516f346f0e55024267daf615f7d845f9a1a819b
     }
-
     .logo {
         max-width: 107px;
     }
@@ -377,17 +231,12 @@ footer h1 {
         font-size: 24px;
         line-height: 26px;
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> 9516f346f0e55024267daf615f7d845f9a1a819b
     .headwrap {
         position: fixed;
         left: 0;
         top: 0;
         bottom: 0;
         right: 0;
-        display: none;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -510,19 +359,11 @@ footer h1 {
 }
 
 @media(max-width:320px) {
-<<<<<<< HEAD
     header .header-wrap {
-=======
-    header {
->>>>>>> 9516f346f0e55024267daf615f7d845f9a1a819b
         margin-top: 0px;
         top: 10px;
         margin-bottom: 56px;
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> 9516f346f0e55024267daf615f7d845f9a1a819b
     .first-section-wrap {
         padding: 0px;
         margin-bottom: 64px;
@@ -594,15 +435,10 @@ footer h1 {
     .company-img {
         justify-content: center;
         align-items: center;
-<<<<<<< HEAD
     }
     .company-img:not(:last-child){
         border:none;
     }
-=======
-        border: none;
-    }
->>>>>>> 9516f346f0e55024267daf615f7d845f9a1a819b
 
     .fourthsection {
         border: none;
