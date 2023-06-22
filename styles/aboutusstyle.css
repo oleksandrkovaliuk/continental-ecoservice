@@ -2,9 +2,9 @@ header {
     position: sticky;
     top: 0;
     z-index: 4;
-  }
-  
-  header .header-wrap {
+}
+
+header .header-wrap {
     padding-block: 24px;
     display: flex;
     background-color: rgba(255, 255, 255, 0.6);
@@ -14,36 +14,39 @@ header {
     max-width: 1920px;
     padding-inline: 64px;
     margin-bottom: 128px;
-  }
-  header::after {
-    position:absolute;
+}
+
+header::after {
+    position: absolute;
     content: '';
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     box-shadow: 1px 3px 4px 0px #ddd;
-    z-index:7;
-  }
-  .headwrap {
+    z-index: 7;
+}
+
+.headwrap {
     display: flex;
     gap: 0 40px;
     align-items: center;
-  }
-  .headmenu {
+}
+
+.headmenu {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     list-style-type: none;
     gap: 32px;
-    z-index:10;
-  }
-  
-  .headmenu li {
+    z-index: 10;
+}
+
+.headmenu li {
     display: inline-block;
-  }
-  
-  .headmenu li a {
+}
+
+.headmenu li a {
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -53,10 +56,10 @@ header {
     line-height: 25px;
     font-family: var(--font-Montserrat);
     color: var(--text-color24);
-    z-index:9;
-  }
-  
-  .number {
+    z-index: 9;
+}
+
+.number {
     display: flex;
     align-items: center;
     font-family: var(--font-OpenSans);
@@ -67,10 +70,10 @@ header {
     padding-left: 40px;
     border-left: 1px solid #ECECEC;
     height: 36px;
-    z-index:9;
-  }
-  
-  .order {
+    z-index: 9;
+}
+
+.order {
     background-color: var(--button-color);
     border: 1px solid #068DAA;
     border-radius: 4px;
@@ -83,10 +86,10 @@ header {
     width: 145px;
     height: 44px;
     transition: all 0.3s ease-in;
-    z-index:10;
-  }
-  
-  .order:hover {
+    z-index: 10;
+}
+
+.order:hover {
     background-color: transparent;
     border: 1px solid #068DAA;
     border-radius: 4px;
@@ -99,29 +102,31 @@ header {
     width: 145px;
     height: 44px;
     cursor: pointer;
-    z-index:10;
-  }
-  
-  footer {
+    z-index: 10;
+}
+
+footer {
     display: flex;
     align-items: center;
     max-width: 1920px;
     justify-content: center;
     padding-block: 20px;
-  }
-  
-  footer h1 {
-  
+}
+
+footer h1 {
+
     font-family: var(--font-OpenSans);
     font-weight: 300;
     font-size: 14px;
     line-height: 20px;
     color: var(--text-color24);
-  }
-  .logo{
+}
+
+.logo {
     cursor: pointer;
-    z-index:10;
-  }
+    z-index: 10;
+}
+
 .first-section-wrap {
     display: flex;
     padding-inline: 64px;
@@ -285,11 +290,13 @@ header {
 .group48 {
     height: 51px;
 }
+
 .socialmedia1 {
     position: relative;
     transition: all 0.3s ease-in;
 
 }
+
 footer {
     display: flex;
     align-items: center;
@@ -320,26 +327,30 @@ footer h1 {
 }
 
 @media(max-width:1280px) {
-    .first-section-wrap{
+    .first-section-wrap {
         flex-direction: column;
-    align-items: center;
-    margin-bottom: 178px;
+        align-items: center;
+        margin-bottom: 178px;
     }
-    .about-us{
+
+    .about-us {
         align-items: center;
         text-align: center;
         margin: 0px;
         margin-bottom: 64px;
     }
 }
+
 @media (max-width:1080px) {
     header .header-wrap {
         margin-bottom: 0px;
         padding-inline: 14px;
     }
-    header::after{
-        position:static;
+
+    header::after {
+        position: static;
     }
+
     .logo {
         max-width: 107px;
     }
@@ -354,6 +365,7 @@ footer h1 {
         font-size: 24px;
         line-height: 26px;
     }
+
     .headwrap {
         position: fixed;
         left: 0;
@@ -487,6 +499,7 @@ footer h1 {
         top: 10px;
         margin-bottom: 56px;
     }
+
     .first-section-wrap {
         padding: 0px;
         margin-bottom: 64px;
@@ -559,8 +572,9 @@ footer h1 {
         justify-content: center;
         align-items: center;
     }
-    .company-img:not(:last-child){
-        border:none;
+
+    .company-img:not(:last-child) {
+        border: none;
     }
 
     .fourthsection {

@@ -24,6 +24,7 @@ img {
   display: block;
   max-width: 100%;
 }
+
 header {
   position: sticky;
   top: 0;
@@ -40,6 +41,7 @@ header .header-wrap {
   max-width: 1920px;
   padding-inline: 64px;
 }
+
 .thirdpage {
   position: relative;
   border-top: 1px solid var(--secondblue-color);
@@ -225,6 +227,7 @@ g,
   gap: 4px;
   margin-bottom: 64px;
 }
-.mobile-menu{
-  display:none;
+
+.mobile-menu {
+  display: none;
 }
