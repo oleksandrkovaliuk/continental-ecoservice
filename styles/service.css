@@ -235,14 +235,19 @@ footer h1 {
 }
 
 .first-wrap-right {
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-right: 42px;
+  max-width: 556px;
+  height: calc(100vh - 101px);
+}
+
+.first-block-wrap {
   display: flex;
   flex-direction: column;
   max-width: 556px;
   height: calc(100vh - 101px);
   padding: 64px 0 48px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  padding-right: 42px;
 }
 
 .firstblocktop {
@@ -322,7 +327,7 @@ footer h1 {
   border: 1px solid var(--secondblue-color);
   border-radius: 4px;
   transition: all 0.3s ease-in;
-  margin-bottom: 72px;
+  margin-top: auto;
 }
 
 .buttoninfirstblock:hover {
