@@ -1,19 +1,7 @@
-header {
-    position: sticky;
-    top: 0;
-    z-index: 4;
-}
 
 header .header-wrap {
-    padding-block: 24px;
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.6);
-    justify-content: space-between;
-    align-items: center;
-    margin-inline: auto;
-    max-width: 1920px;
-    padding-inline: 64px;
     margin-bottom: 128px;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 header::after {

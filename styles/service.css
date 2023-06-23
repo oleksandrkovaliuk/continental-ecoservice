@@ -1,21 +1,9 @@
-header {
-  position: sticky;
-  top: 0;
-  z-index: 4;
-}
 
 header .header-wrap {
-  padding-block: 24px;
-  display: flex;
-  background-color: var(--text-color);
-  justify-content: space-between;
-  align-items: center;
-  margin-inline: auto;
-  max-width: 1920px;
-  padding-inline: 64px;
   border-bottom: 1px solid var(--circle-color);
+  margin-bottom:0px;
+  background-color: rgb(255, 255, 255);
 }
-
 footer {
   display: flex;
   align-items: center;
@@ -542,7 +530,9 @@ footer h1 {
     display: none;
   }
 }
-
+@media(max-width:768px){
+  
+}
 @media(max-width:320px) {
   .mobile-menu {
     display: flex;
