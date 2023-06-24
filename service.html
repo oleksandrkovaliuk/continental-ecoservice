@@ -1,10 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/service.css">
-  <link rel="stylesheet" href="./styles/main.css">
   <title>services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/service.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -43,7 +46,8 @@
     <div class="first-section">
       <div class="first-sectionwrap">
         <ul>
-          <li class="active"><a href="./service.html">
+          <li id='li-section-1' class="active">
+            <button class='change-state' id='set-section-1'>
               <h2 class="text-left"><b>Дe</b>зінфекція</h2>
               <p class="discription">уничтожение бактерий, грибков, вирусов, плесени</p>
               <svg class="svg-behind" width="70" height="68" viewBox="0 0 70 68" fill="none"
@@ -79,9 +83,9 @@
                 <path d="M32.9834 19.3831L31.8501 10.3164" stroke="#068DAA" stroke-linecap="round"
                   stroke-linejoin="round" />
               </svg>
-            </a>
+            </button>
           </li>
-          <li><a href="./Service2.html">
+          <li id='li-section-2'><button class='change-state' id='set-section-2'>
               <h2 class="text-left"><b>Де</b>ратизація</h2>
               <p class="discription">уничтожение бактерий, грибков, вирусов, плесени</p>
               <svg class="svg-behind" width="80" height="80" viewBox="0 0 80 80" fill="none"
@@ -117,9 +121,9 @@
                 <path d="M37.9834 24.3833L36.8501 15.3167" stroke="#068DAA" stroke-linecap="round"
                   stroke-linejoin="round" />
               </svg>
-            </a>
+            </button>
           </li>
-          <li><a href="./Service3.html">
+          <li id='li-section-3'><button class='change-state' id='set-section-3'>
               <h2 class="text-left"><b>Де</b>зинсекція</h2>
               <p class="discription">уничтожение бактерий, грибков, вирусов, плесени</p>
               <svg class="svg-behind" width="70" height="69" viewBox="0 0 70 69" fill="none"
@@ -152,10 +156,10 @@
                 <path d="M34.9962 26.1889C34.9962 36.621 35.255 58.9284 21.9209 64.5865" stroke="#068DAA"
                   stroke-linecap="round" stroke-linejoin="round" />
               </svg>
-            </a>
+            </button>
           </li>
         </ul>
-        <div class="first-wrap">
+        <div id='section-1' class="first-wrap active">
           <div class="first-wrap-right">
             <div class="first-block-wrap">
               <div class="firstblocktop">
@@ -252,6 +256,173 @@
             </div>
           </div>
         </div>
+        <div id='section-2' class="first-wrap">
+          <div class="first-wrap-right">
+            <div class="first-block-wrap">
+              <div class="firstblocktop">
+                <div class="textintopblock">
+                  <h1>Дезинфекція</h1>
+                  <h2>знищення бактерій, грибків, вірусів, плісняви</h2>
+                </div>
+                <div class="imgintopblock">
+                  <svg class="imgintopsvg" width="80" height="80" viewBox="0 0 80 80" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="80" height="80" fill="#FDFDFD" />
+                    <path
+                      d="M44.415 21.8701C44.415 22.5231 43.8398 23.1073 43.0605 23.1073C42.2812 23.1073 41.7061 22.5231 41.7061 21.8701C41.7061 21.217 42.2812 20.6328 43.0605 20.6328C43.8398 20.6328 44.415 21.217 44.415 21.8701Z"
+                      stroke="#C8E5EB" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M34.9909 43.8526C38.851 44.1308 46.7499 45.1094 49.5815 51.7965C52.4131 58.4835 49.5815 68.4065 42.4235 71.9796C35.2655 75.5528 28.3624 73.2751 19.459 66.7087C10.5556 60.1424 8.45119 46.1879 11.0165 37.8971C13.5818 29.6062 21.5934 23.4819 25.0972 20.837M34.3437 25.9206C31.1929 25.6017 24.7549 23.9604 23.8224 17.0951C22.8899 10.2298 29.8724 6 34.6771 6C39.4818 6 44.5023 9.01997 45.5024 15.5195C49.6763 15.8821 57.6842 17.2406 59.1713 19.965C60.6585 22.6895 61.6176 21.7514 62.108 22.6895C62.5984 23.6276 61.3874 23.576 60.2794 25.3485C59.1713 27.1209 59.9754 27.3461 53.7587 30.1504C47.542 32.9547 44.9827 38.5069 46.1888 47.3886M69.9526 42.7478C70.305 48.8322 68.6864 54.8724 65.3178 60.0445C61.9491 65.2167 56.9944 69.2689 51.1293 71.6486C45.2643 74.0282 38.7746 74.6194 32.5453 73.3414"
+                      stroke="#C8E5EB" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+              <div class="textunderfirstblock">
+                <div class="list">
+                  <img src="./svg/Ellipse 17.svg">
+                  <h1>Обробка поверхонь дезінфекційним розчином</h1>
+                </div>
+                <div class="list">
+                  <img src="./svg/Ellipse 17.svg">
+                  <h1>Використання ультрафіолетового бактерицидного випромінювання для знезараження повітря</h1>
+                </div>
+                <div class="list">
+                  <img src="./svg/Ellipse 17.svg">
+                  <h1>Безкоштовне повторне проведення процедури, якщо результат не був досягнутий</h1>
+                </div>
+                <div class="list">
+                  <img src="./svg/Ellipse 17.svg">
+                  <h1>Цілодобовий графік - заявки приймаються 24/7, включаючи вихідні та святкові дні</h1>
+                </div>
+              </div>
+              <button class="buttoninfirstblock">Заказати послугу</button>
+            </div>
+            <div class="description-bottom">
+              <h1>Шаг 1</h1>
+              <h2>Обробка поверхонь дезінфікуючим розчином. Усі препарати, які ми використовуємо, належать до III і IV
+                класу небезпеки, сертифіковані та дозволені до використання на території Російської Федерації,
+                відповідають СП 3.5.3.3223-14, СанПіН 3.5.2.3472-17.</h2>
+              <img src="./img/Rectangle 34.jpg">
+            </div>
+            <div class="description-bottom">
+              <h1>Шаг 2</h1>
+              <h2>Обробка бактерицидними опромінювачами відкритого типу, які найефективніше проявляють себе в боротьбі з
+                вірусами і навіть цвілевими грибами, які найскладніше піддаються знищенню.
+
+                Використання ультрафіолетового бактерицидного випромінювання є дієвим санітарно-протиепідемічним
+                засобом, спрямованим на придушення життєдіяльності мікроорганізмів у повітряному середовищі та на
+                поверхнях приміщень.
+
+                Знезараження повітря УФ-випромінюванням входить до переліку засобів, що забезпечують зниження рівня
+                інфекційних захворювань, доповнює обов'язкове дотримання чинних санітарних норм і правил щодо
+                влаштування та утримання приміщень.</h2>
+              <img src="./img/rectangle 36.png">
+              <div class="textbottom">
+                <p1>Усі заходи виконуються відповідно до законодавства РФ і встановлених у РФ санітарних норм, правил:
+                </p1>
+                <p2>- "Основы законодательства Российской Федерации об охране здоровья граждан" от 18 июня 1993 г.,</p2>
+                <p3>- Федеральным законом №52-ФЗ от 30.03.1999 г. «О санитарно-эпидемиологическом благополучии
+                  населения» СП 3.5.3.3223-14, СП 1.1.1058-01, СанПиН 3.5.1378-03.</p3>
+                <p4>Стоимость услуг зависит от размера помещения, сложности работ и количества процедур, которые
+                  требуются для достижения необходимого результата.</p4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id='section-3' class="first-wrap">
+          <div class="first-wrap-right">
+            <div class="first-block-wrap">
+              <div class="firstblocktop">
+                <div class="textintopblock">
+                  <h1>Дезинфекція</h1>
+                  <h2>знищення бактерій, грибків, вірусів, плісняви</h2>
+                </div>
+                <div class="imgintopblock">
+                  <svg class="imgintopsvg" width="70" height="69" viewBox="0 0 70 69" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M39.5391 5.5053L43.9318 1" stroke="#C8E5EB" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M29.8751 5.74559L25.3066 1" stroke="#C8E5EB" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M55.2363 21.2436L61.6791 16.498" stroke="#C8E5EB" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M14.7646 21.2436L8.32191 16.498" stroke="#C8E5EB" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M61.269 40.4668H69.0003" stroke="#C8E5EB" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M8.73145 40.4668H1.00016" stroke="#C8E5EB" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M51.8389 62.2725L58.633 66.8979" stroke="#C8E5EB" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M18.1611 62.2725L11.367 66.8979" stroke="#C8E5EB" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M60.9447 39.9258C60.9447 55.7531 49.298 68.5 35.0295 68.5C20.7609 68.5 9.11426 55.7531 9.11426 39.9258C9.11426 24.0985 20.7609 11.3516 35.0295 11.3516C49.298 11.3516 60.9447 24.0985 60.9447 39.9258Z"
+                      stroke="#C8E5EB" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M46.3337 13.6151C46.3337 11.289 45.1428 9.05825 43.0228 7.4135C40.9029 5.76874 38.0277 4.84473 35.0297 4.84473C32.0316 4.84473 29.1564 5.76874 27.0365 7.4135C24.9165 9.05825 23.7256 11.289 23.7256 13.6151"
+                      stroke="#C8E5EB" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M51.5583 17.8037C50.0571 20.1785 47.7102 22.183 44.7859 23.5879C41.8617 24.9928 38.4781 25.7413 35.0223 25.748C31.5666 25.7546 28.1781 25.0191 25.2446 23.6255C22.311 22.2319 19.9509 20.2364 18.4341 17.8675"
+                      stroke="#C8E5EB" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M34.9963 26.6299C34.9963 37.062 34.7372 58.9281 48.0713 64.5861" stroke="#C8E5EB"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M34.9962 26.1885C34.9962 36.6205 35.255 58.928 21.9209 64.5861" stroke="#C8E5EB"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+              <div class="textunderfirstblock">
+                <div class="list">
+                  <img src="./svg/Ellipse 17.svg">
+                  <h1>Обробка поверхонь дезінфекційним розчином</h1>
+                </div>
+                <div class="list">
+                  <img src="./svg/Ellipse 17.svg">
+                  <h1>Використання ультрафіолетового бактерицидного випромінювання для знезараження повітря</h1>
+                </div>
+                <div class="list">
+                  <img src="./svg/Ellipse 17.svg">
+                  <h1>Безкоштовне повторне проведення процедури, якщо результат не був досягнутий</h1>
+                </div>
+                <div class="list">
+                  <img src="./svg/Ellipse 17.svg">
+                  <h1>Цілодобовий графік - заявки приймаються 24/7, включаючи вихідні та святкові дні</h1>
+                </div>
+              </div>
+              <button class="buttoninfirstblock">Заказати послугу</button>
+            </div>
+            <div class="description-bottom">
+              <h1>Шаг 1</h1>
+              <h2>Обробка поверхонь дезінфікуючим розчином. Усі препарати, які ми використовуємо, належать до III і IV
+                класу небезпеки, сертифіковані та дозволені до використання на території Російської Федерації,
+                відповідають СП 3.5.3.3223-14, СанПіН 3.5.2.3472-17.</h2>
+              <img src="./img/Rectangle 34.jpg">
+            </div>
+            <div class="description-bottom">
+              <h1>Шаг 2</h1>
+              <h2>Обробка бактерицидними опромінювачами відкритого типу, які найефективніше проявляють себе в боротьбі з
+                вірусами і навіть цвілевими грибами, які найскладніше піддаються знищенню.
+
+                Використання ультрафіолетового бактерицидного випромінювання є дієвим санітарно-протиепідемічним
+                засобом, спрямованим на придушення життєдіяльності мікроорганізмів у повітряному середовищі та на
+                поверхнях приміщень.
+
+                Знезараження повітря УФ-випромінюванням входить до переліку засобів, що забезпечують зниження рівня
+                інфекційних захворювань, доповнює обов'язкове дотримання чинних санітарних норм і правил щодо
+                влаштування та утримання приміщень.</h2>
+              <img src="./img/rectangle 36.png">
+              <div class="textbottom">
+                <p1>Усі заходи виконуються відповідно до законодавства РФ і встановлених у РФ санітарних норм, правил:
+                </p1>
+                <p2>- "Основы законодательства Российской Федерации об охране здоровья граждан" от 18 июня 1993 г.,</p2>
+                <p3>- Федеральным законом №52-ФЗ от 30.03.1999 г. «О санитарно-эпидемиологическом благополучии
+                  населения» СП 3.5.3.3223-14, СП 1.1.1058-01, СанПиН 3.5.1378-03.</p3>
+                <p4>Стоимость услуг зависит от размера помещения, сложности работ и количества процедур, которые
+                  требуются для достижения необходимого результата.</p4>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <footer>
@@ -259,17 +430,10 @@
         © Continental Ecoservice, 2020
       </h1>
     </footer>
-    <script>
-      const menu = document.querySelector('.mobile-full-menu');
-      const burger = document.querySelector('.burger');
-      const burger2 = document.querySelector('.burger2');
-
-      burger.addEventListener('click', () => {
-        menu.style = 'display: flex';
-      });
-      burger2.addEventListener('click', () => {
-        menu.style = 'display: none';
-      });
-    </script>
   </main>
-  </body>
+
+  <script src='./js/main.js'></script>
+  <script src='./js/service.js'></script>
+</body>
+
+</html>
