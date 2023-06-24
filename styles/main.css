@@ -39,6 +39,16 @@ header .header-wrap {
   max-width: 1920px;
   padding-inline: 64px;
 }
+header::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 1px 3px 4px 0px #ddd;
+  z-index: 7;
+}
 .headwrap {
   display: flex;
   gap: 0 40px;

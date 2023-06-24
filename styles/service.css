@@ -1,6 +1,6 @@
 
 header .header-wrap {
-  border-bottom: 1px solid var(--circle-color);
+  /* border-bottom: 1px solid var(--circle-color); */
   margin-bottom:0px;
   background-color: rgb(255, 255, 255);
 }
@@ -134,7 +134,7 @@ footer h1 {
   max-width: 1920px;
   width: 100%;
   padding-inline: 106px;
-  height: calc(100vh - 101px);
+  height: calc(100vh - 161px);
 }
 
 .first-sectionwrap ul {
@@ -227,14 +227,14 @@ footer h1 {
   overflow-y: auto;
   padding-right: 42px;
   max-width: 556px;
-  height: calc(100vh - 101px);
+  height: calc(100vh - 161px);
 }
 
 .first-block-wrap {
   display: flex;
   flex-direction: column;
   max-width: 556px;
-  height: calc(100vh - 101px);
+  height: calc(100vh - 161px);
   padding: 64px 0 48px;
 }
 
