@@ -1,20 +1,23 @@
-header .header-wrap{
+header .header-wrap {
   margin-bottom: 128px;
   background-color: rgba(255, 255, 255, 0.6);
 }
+
 header::after {
-  position:absolute;
+  position: absolute;
   content: '';
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   box-shadow: 1px 3px 4px 0px #ddd;
-  z-index:7;
+  z-index: 7;
 }
+
 main {
   margin-top: 74px;
 }
+
 .underhead {
   display: flex;
   max-width: 1920px;
@@ -501,12 +504,14 @@ main {
 }
 
 @media(max-width: 1080px) {
-  header .header-wrap{
+  header .header-wrap {
     padding-inline: 14px;
   }
-  header::after{
-    position:static;
+
+  header::after {
+    position: static;
   }
+
   main {
     margin-top: 45px;
     padding-left: 0px;
@@ -596,7 +601,7 @@ main {
   }
 
   .headwrap {
-    display:none;
+    display: none;
     position: fixed;
     left: 0;
     top: 0;
@@ -608,7 +613,7 @@ main {
     padding-inline: 24px;
     padding-bottom: 24px;
     background-color: white;
-    z-index:6;
+    z-index: 6;
 
   }
 
@@ -651,6 +656,7 @@ main {
     height: 44px;
     margin-bottom: 16px;
   }
+
 
   .order2 {
     display: block;

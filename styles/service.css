@@ -3,6 +3,7 @@ header .header-wrap {
   margin-bottom: 0px;
   background-color: rgb(255, 255, 255);
 }
+
 footer {
   display: flex;
   align-items: center;
@@ -136,8 +137,7 @@ footer h1 {
   align-items: center;
   max-width: 1920px;
   width: 100%;
-  padding-inline: 106px;
-  height: calc(100vh - 161px);
+  padding-inline: 64px;
 }
 
 .first-sectionwrap ul {
@@ -165,6 +165,7 @@ footer h1 {
   color: var(--text-color24);
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .first-sectionwrap .text-left {
@@ -458,6 +459,10 @@ footer h1 {
     margin-bottom: 16px;
   }
 
+  .order:hover {
+    width: 100%;
+  }
+
   .order2 {
     display: block;
     width: 100%;
@@ -465,6 +470,15 @@ footer h1 {
     background-color: var(--secondblue-color);
     border: 1px solid #c8e5eb;
     border-radius: 4px;
+    color: var(--button-color);
+    transition: all 0.3s ease-in;
+  }
+
+  .order2:hover {
+    background-color: transparent;
+    border: 1px solid var(--button-color);
+    border-radius: 4px;
+    cursor: pointer;
     color: var(--button-color);
   }
 
@@ -487,7 +501,7 @@ footer h1 {
   .first-sectionwrap {
     flex-direction: column;
     padding-inline: 0;
-    height: calc(100vh - 78px);
+    height: auto;
   }
 
   .first-sectionwrap ul {
@@ -532,10 +546,31 @@ footer h1 {
   .firstblocktop {
     display: none;
   }
+
+  .first-block-wrap {
+    height: auto;
+  }
+
+  .textunderfirstblock {
+    margin-bottom: 45px;
+  }
 }
+
 @media (max-width: 768px) {
+  .first-sectionwrap ul {
+    gap: 61px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .first-wrap-right {
+    padding-inline: 20px;
+    padding-right: 0px;
+  }
 }
-@media (max-width: 320px) {
+
+@media (max-width:320px) {
   .mobile-menu {
     display: flex;
     align-items: center;
@@ -543,8 +578,14 @@ footer h1 {
   }
 
   .first-sectionwrap ul {
-    flex-direction: column;
     align-items: center;
+    gap: 31px;
+    flex-direction: column;
+  }
+
+  .first-wrap-right {
+    padding-right: 0px;
+    padding-inline: 20px;
   }
 
   .first-wrap-right {
