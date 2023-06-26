@@ -7,6 +7,11 @@
   --button-color: #068DAA;
   --secondblue-color: #C8E5EB;
   --circle-color: #ECECEC;
+  --bg-color:#f3fbfd;
+  --title-color:#c8e5eb;
+  --infobox-color:#e5f3f6;
+  --infoboxtxt-color:#8b8f90;
+  --buttoncolor2-color:#7ac0cf;
 }
 
 * {
