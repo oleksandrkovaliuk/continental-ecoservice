@@ -122,7 +122,7 @@
     left: 16px;
     pointer-events: none;
 }
-.input-infobox:active + .infobox-label , .input-infobox:focus + .infobox-label {
+.input-infobox:active + .infobox-label , .input-infobox:focus + .infobox-label , .input-infobox:valid + .infobox-label{
     top:-50%;
     left:0;
     color:var(--infoboxtxt-color);
@@ -193,7 +193,7 @@
     color: var(--text-color24);
     outline: none;
 }
-.discriptio-wrap textarea:active + .infobox-label , .discriptio-wrap textarea:focus + .infobox-label{
+.discriptio-wrap textarea:active + .infobox-label , .discriptio-wrap textarea:focus + .infobox-label , .discriptio-wrap textarea:valid + .infobox-label{
     top:-33px;
     left:0px;
     font-size:14px;

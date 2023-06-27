@@ -125,19 +125,19 @@
       </div>
         <div class="infobox-container">
           <div class="infobox-wrap">
-            <input type="name" autocomplete="off" id="name" name="name" class="input-infobox">
+            <input required type="name" autocomplete="off" id="name" name="name" class="input-infobox">
             <label class="infobox-label" for="name">
               Імя
             </label>
           </div>
           <div class="infobox-wrap">
-            <input type="text" id="fam" name="fam" class="input-infobox">
+            <input required type="text" id="fam" name="fam" class="input-infobox">
             <label class="infobox-label" for="fam">
               Фамілія
             </label>
           </div>
           <div class="infobox-wrap">
-            <input type="email" autocomplete="off" id="mail" name="mail" class="input-infobox">
+            <input required type="text" autocomplete="off" id="mail" name="mail" class="input-infobox">
             <label class="infobox-label" for="mail">
               Email
             </label>
@@ -145,26 +145,26 @@
         </div>
         <div class="infobox-container">
           <div class="infobox-wrap">
-            <input type="text" id="number" name="number" class="input-infobox">
+            <input required type="text" id="number" name="number" class="input-infobox">
             <label class="infobox-label" for="number">
               Номер
             </label>
           </div>
           <div class="infobox-wrap">
-            <input type="text" id="housetype" name="housetype" class="input-infobox">
+            <input required type="text" id="housetype" name="housetype" class="input-infobox">
             <label class="infobox-label" for="housetype">
               Тип преміщення
             </label>
           </div>
           <div class="infobox-wrap">
-            <input min="0" type="number" id="housesize" name="housesize" class="input-infobox">
+            <input required min="0" type="number" id="housesize" name="housesize" class="input-infobox">
             <label class="infobox-label" for="housesize">
               Площа приміщення в м²
             </label>
           </div>
         </div>
         <div class="discriptio-wrap">
-          <textarea name="discription" cols="0" rows="4"></textarea>
+          <textarea required name="discription" cols="0" rows="4"></textarea>
           <label class="infobox-label">Опис проблеми</label>
         </div>
         <button class="submit">Відправити заявку</button>
