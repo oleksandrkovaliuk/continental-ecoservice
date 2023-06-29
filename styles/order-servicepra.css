@@ -5,6 +5,15 @@
 .order-service-container .widthcontainer{
     max-width:880px;
     margin-inline:auto;
+    position:relative;
+}
+.order-service-container .closebutton{
+position:absolute;
+top:10px;
+right:0px;
+background-color:transparent;
+border:none;
+cursor:pointer;
 }
 .order-service-container .title{
     margin-bottom:40px;
@@ -39,6 +48,7 @@
     top: 0;
     bottom: 0;
     opacity: 0;
+    cursor:pointer;
 }
 .order-service-container .checkbox-wrap:hover label::before{
     border:1px solid var(--button-color);
@@ -51,7 +61,8 @@
     align-items: center;
     letter-spacing: 0.14px;
     text-transform: capitalize;
-    font-family: var(--font-OpenSans)
+    font-family: var(--font-OpenSans);
+    cursor:pointer;
 }
 .order-service-container .checkbox-wrap label:before{
     background-color: #c8e5eb;
@@ -66,7 +77,8 @@
     flex-shrink: 0;
     height: 20px;
     margin-right: 14px;
-    width: 20px
+    width: 20px;
+    cursor:pointer;
 }
 .order-service-container .input-checkbox:checked + label:before{
     background-color: var(--button-color);
@@ -95,6 +107,7 @@
     font-family: var(--font-OpenSans);
     font-size: 16px;
     transition: all 0.3s;
+    cursor:pointer;
 }
 .order-service-container .submit:hover{
     background-color: var(--buttoncolor2-color);
@@ -152,6 +165,7 @@
     height:60px;
     background-color: var(--infobox-color);
     transition:all 0.3s;
+    cursor:pointer;
 }
 .infobox-wrap input:hover{
     background-color: var(--title-color);
@@ -172,6 +186,7 @@
     height:116px;
     width:100%;
     transition:all 0.3s;
+    cursor:pointer;
 }
 .discriptio-wrap textarea:hover{
     background-color: var(--title-color);
@@ -198,4 +213,40 @@
     left:0px;
     font-size:14px;
     color:var(--infoboxtxt-color);
+}
+@media(max-width:1280px) {
+    .order-service-container .widthcontainer{
+        padding-inline: 20px;
+    }
+    .order-service-container .checkobox-container{
+        row-gap: 30px;
+        flex-wrap: wrap;
+    }
+    .infobox-container {
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    .discriptio-wrap .infobox-label{
+        left:31px;
+    }
+}
+@media(max-width:780px) {
+    .order-service-container .title{
+        font-size:24px;
+        line-height:64px;
+    }
+    .order-service-container{
+        position:fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+
+    }
+}
+@media(max-width:320px){
+    .order-service-container .title{
+        font-size: 16px;
+        line-height:24px;
+    }
 }
