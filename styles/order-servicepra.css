@@ -1,252 +1,262 @@
-.order-service-container{
-    background-color:var(--bg-color);
-    padding-block:160px;
+.order-service-container {
+  background-color: var(--bg-color);
+  padding-block: 160px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1090;
+  display: none;
 }
-.order-service-container .widthcontainer{
-    max-width:880px;
-    margin-inline:auto;
-    position:relative;
+.order-service-container.show {
+  display: block;
 }
-.order-service-container .closebutton{
-position:absolute;
-top:10px;
-right:0px;
-background-color:transparent;
-border:none;
-cursor:pointer;
+.order-service-container .widthcontainer {
+  max-width: 880px;
+  margin-inline: auto;
+  position: relative;
 }
-.order-service-container .title{
-    margin-bottom:40px;
-    font-size: 32px;
-    color: var(--title-color);
-    font-weight: 700;
-    line-height: 64px;
-    text-align: center;
-    margin-bottom: 49px;
-    font-family:var(--font-RobotoSlab);
+.order-service-container .closebutton {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
-.order-service-container .checkobox-container{
-    display:flex;
-    justify-content:center;
-    column-gap:20px;
-    margin-bottom:65px;
+.order-service-container .title {
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: var(--title-color);
+  font-weight: 700;
+  line-height: 64px;
+  text-align: center;
+  margin-bottom: 49px;
+  font-family: var(--font-RobotoSlab);
 }
-.order-service-container .checkbox-wrap{
-    flex-grow:1;
-    max-width:220px;
-    position:relative;
-    column-gap:20px;
-    padding: 20px 18px;
-    border-radius: 4px;
-    position: relative;
-    border: 1px solid var(--secondblue-color);
+.order-service-container .checkobox-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  margin-bottom: 65px;
 }
-.order-service-container .input-checkbox{
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    opacity: 0;
-    cursor:pointer;
+.order-service-container .checkbox-wrap {
+  flex-grow: 1;
+  max-width: 220px;
+  position: relative;
+  column-gap: 20px;
+  padding: 20px 18px;
+  border-radius: 4px;
+  position: relative;
+  border: 1px solid var(--secondblue-color);
 }
-.order-service-container .checkbox-wrap:hover label::before{
-    border:1px solid var(--button-color);
+.order-service-container .input-checkbox {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  cursor: pointer;
 }
-.order-service-container .checkbox-wrap label{
-    color:var(--text-color24);
-    font-size: 14px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.14px;
-    text-transform: capitalize;
-    font-family: var(--font-OpenSans);
-    cursor:pointer;
+.order-service-container .checkbox-wrap:hover label::before {
+  border: 1px solid var(--button-color);
 }
-.order-service-container .checkbox-wrap label:before{
-    background-color: #c8e5eb;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: 50% 50%;
-    border: 1px solid #c8e5eb;
-    border-radius: 4px;
-    content: "";
-    display: inline-block;
-    flex-grow: 0;
-    flex-shrink: 0;
-    height: 20px;
-    margin-right: 14px;
-    width: 20px;
-    cursor:pointer;
+.order-service-container .checkbox-wrap label {
+  color: var(--text-color24);
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.14px;
+  text-transform: capitalize;
+  font-family: var(--font-OpenSans);
+  cursor: pointer;
 }
-.order-service-container .input-checkbox:checked + label:before{
-    background-color: var(--button-color);
-    border-color:var(--button-color);
-    background-image:url(../svg/ckeckbox.svg);
+.order-service-container .checkbox-wrap label:before {
+  background-color: #c8e5eb;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  border: 1px solid #c8e5eb;
+  border-radius: 4px;
+  content: "";
+  display: inline-block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 20px;
+  margin-right: 14px;
+  width: 20px;
+  cursor: pointer;
 }
-.order-service-container .icon-container{
-    position:absolute;
-    right:-10px;
-    bottom:-10px;
+.order-service-container .input-checkbox:checked + label:before {
+  background-color: var(--button-color);
+  border-color: var(--button-color);
+  background-image: url(../svg/ckeckbox.svg);
 }
-.order-service-container .icon{
-    width:40px;
-    height:40px;
-    background-color:var(--bg-color);
+.order-service-container .icon-container {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
 }
-.order-service-container .submit{
-    justify-content: center;
-    width:100%;
-    padding: 20px 24px;
-    background-color: var(--button-color);
-    border: 1px solid var(--button-color);
-    border-radius: 4px;
-    box-sizing: border-box;
-    color: var(--text-color);
-    font-family: var(--font-OpenSans);
-    font-size: 16px;
-    transition: all 0.3s;
-    cursor:pointer;
+.order-service-container .icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--bg-color);
 }
-.order-service-container .submit:hover{
-    background-color: var(--buttoncolor2-color);
-    border-color: var(--buttoncolor2-color);
+.order-service-container .submit {
+  justify-content: center;
+  width: 100%;
+  padding: 20px 24px;
+  background-color: var(--button-color);
+  border: 1px solid var(--button-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: var(--text-color);
+  font-family: var(--font-OpenSans);
+  font-size: 16px;
+  transition: all 0.3s;
+  cursor: pointer;
 }
-.infobox-container{
-    display:flex;
-    justify-content: center;
-    column-gap:20px;
-    margin-bottom:45px;
+.order-service-container .submit:hover {
+  background-color: var(--buttoncolor2-color);
+  border-color: var(--buttoncolor2-color);
 }
-.infobox-wrap{
-    position: relative;
-    flex-grow:1;
+.infobox-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  margin-bottom: 45px;
 }
-.infobox-wrap .infobox-label{
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%);
-    left:16px;
-    transition:all 0.3s;
-    color:var(--infoboxtxt-color);
-    font-family: Open Sans,sans-serif;
-    font-size: 16px;
-    left: 16px;
-    pointer-events: none;
+.infobox-wrap {
+  position: relative;
+  flex-grow: 1;
 }
-.input-infobox:active + .infobox-label , .input-infobox:focus + .infobox-label , .input-infobox:valid + .infobox-label{
-    top:-50%;
-    left:0;
-    color:var(--infoboxtxt-color);
-    font-weight: 300;
-    line-height: 16px;
-    font-size:var(--font-OpenSans);
-    transform:translateY(0);
-    font-size: 14px;
+.infobox-wrap .infobox-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+  transition: all 0.3s;
+  color: var(--infoboxtxt-color);
+  font-family: Open Sans, sans-serif;
+  font-size: 16px;
+  left: 16px;
+  pointer-events: none;
 }
-.infobox-wrap input:active , .infobox-wrap input:focus{
-    background-color: var(--bg-color);
-    border: 1px solid var(--button-color);
-    color: var(--text-color24);
-    outline: none;
+
+.input-infobox:active + .infobox-label,
+.input-infobox:focus + .infobox-label,
+.input-infobox:not(:placeholder-shown) + .infobox-label {
+  top: -50%;
+  left: 0;
+  color: var(--infoboxtxt-color);
+  font-weight: 300;
+  line-height: 16px;
+  font-size: var(--font-OpenSans);
+  transform: translateY(0);
+  font-size: 14px;
 }
-.infobox-wrap input{
-    border: 1px solid transparent;
-    border-radius: 4px;
-    color: var(--text-color24);
-    font-family: var(--font-OpenSans);
-    font-size: 16px;
-    font-weight: 400;
-    height: 60px;
-    line-height: 1;
-    padding: 22px 16px;
-    width:100%;
-    height:60px;
-    background-color: var(--infobox-color);
-    transition:all 0.3s;
-    cursor:pointer;
+.infobox-wrap input:active,
+.infobox-wrap input:focus {
+  background-color: var(--bg-color);
+  border: 1px solid var(--button-color);
+  color: var(--text-color24);
+  outline: none;
 }
-.infobox-wrap input:hover{
-    background-color: var(--title-color);
+.infobox-wrap input {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: var(--text-color24);
+  font-family: var(--font-OpenSans);
+  font-size: 16px;
+  font-weight: 400;
+  height: 60px;
+  line-height: 1;
+  padding: 22px 16px;
+  width: 100%;
+  height: 60px;
+  background-color: var(--infobox-color);
+  transition: all 0.3s;
+  cursor: pointer;
 }
-.infobox-wrap input:hover:active ,.infobox-wrap input:hover:focus{
-    background-color:unset;
+.infobox-wrap input:hover {
+  background-color: var(--title-color);
+}
+.infobox-wrap input:hover:active,
+.infobox-wrap input:hover:focus {
+  background-color: unset;
 }
 .discriptio-wrap {
-    position:relative;
-    margin-bottom:60px;
+  position: relative;
+  margin-bottom: 60px;
 }
-.discriptio-wrap textarea{
-    resize: none;
-    padding:22px 16px;
-    background-color: #e5f3f6;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    height:116px;
-    width:100%;
-    transition:all 0.3s;
-    cursor:pointer;
+.discriptio-wrap textarea {
+  resize: none;
+  padding: 22px 16px;
+  background-color: #e5f3f6;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  height: 116px;
+  width: 100%;
+  transition: all 0.3s;
+  cursor: pointer;
 }
-.discriptio-wrap textarea:hover{
-    background-color: var(--title-color);
+.discriptio-wrap textarea:hover {
+  background-color: var(--title-color);
 }
-.discriptio-wrap .infobox-label{
-    position:absolute;
-    color: var(--infoboxtxt-color);
-    font-family: var(--font-OpenSans);
+.discriptio-wrap .infobox-label {
+  position: absolute;
+  color: var(--infoboxtxt-color);
+  font-family: var(--font-OpenSans);
+  font-size: 16px;
+  font-weight: 400;
+  top: 22px;
+  left: 16px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.discriptio-wrap textarea:active,
+.discriptio-wrap textarea:focus {
+  background-color: transparent;
+  border: 1px solid var(--button-color);
+  color: var(--text-color24);
+  outline: none;
+}
+.discriptio-wrap textarea:active + .infobox-label,
+.discriptio-wrap textarea:focus + .infobox-label,
+.discriptio-wrap textarea:not(:placeholder-shown) + .infobox-label {
+  top: -33px;
+  left: 0px;
+  font-size: 14px;
+  color: var(--infoboxtxt-color);
+}
+@media (max-width: 1280px) {
+  .order-service-container .widthcontainer {
+    padding-inline: 20px;
+  }
+  .order-service-container .checkobox-container {
+    row-gap: 30px;
+    flex-wrap: wrap;
+  }
+  .infobox-container {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .discriptio-wrap .infobox-label {
+    left: 31px;
+  }
+}
+@media (max-width: 780px) {
+  .order-service-container .title {
+    font-size: 24px;
+    line-height: 64px;
+  }
+}
+@media (max-width: 320px) {
+  .order-service-container .title {
     font-size: 16px;
-    font-weight: 400;
-    top:22px;
-    left:16px;
-    pointer-events: none;
-    transition:all 0.3s;
-}
-.discriptio-wrap textarea:active , .discriptio-wrap textarea:focus{
-    background-color: transparent;
-    border: 1px solid var(--button-color);
-    color: var(--text-color24);
-    outline: none;
-}
-.discriptio-wrap textarea:active + .infobox-label , .discriptio-wrap textarea:focus + .infobox-label , .discriptio-wrap textarea:valid + .infobox-label{
-    top:-33px;
-    left:0px;
-    font-size:14px;
-    color:var(--infoboxtxt-color);
-}
-@media(max-width:1280px) {
-    .order-service-container .widthcontainer{
-        padding-inline: 20px;
-    }
-    .order-service-container .checkobox-container{
-        row-gap: 30px;
-        flex-wrap: wrap;
-    }
-    .infobox-container {
-        flex-wrap: wrap;
-        row-gap: 30px;
-    }
-    .discriptio-wrap .infobox-label{
-        left:31px;
-    }
-}
-@media(max-width:780px) {
-    .order-service-container .title{
-        font-size:24px;
-        line-height:64px;
-    }
-    .order-service-container{
-        position:fixed;
-        top:0;
-        bottom:0;
-        left:0;
-        right:0;
-
-    }
-}
-@media(max-width:320px){
-    .order-service-container .title{
-        font-size: 16px;
-        line-height:24px;
-    }
+    line-height: 24px;
+  }
 }

@@ -36,7 +36,7 @@
           <li><a href="#contacts">Контакти</a></li>
         </ul>
         <a class="number" href="#">+380997882668</a>
-        <button class="order">Замовити послугу</button>
+        <button id='order-service-btn' class="order">Замовити послугу</button>
         <button class="order2">Звязатись</button>
         <button class="burger2">
           <img src="./svg/x.svg">
@@ -57,6 +57,7 @@
         <img class="img-right" src="./img/Rectangle 44.jpg">
       </div>
     </div>
+
     <div class="second-section">
       <div class="second-section-block">
         <div class="blocks">
@@ -85,96 +86,7 @@
         </div>
       </div>
     </div>
-    <div class="order-service-container">
-      <div class="widthcontainer">
-        <button class="closebutton">
-          <img src="./svg/x.svg">
-        </button>
-        <h2 class='title'>Виберіть послугу та опешіть проблему</h2>
-        <form>
-        <div class='checkobox-container'>
-          <div class="checkbox-wrap">
-            <input type="checkbox" id="disinfection" name="disinfection" class="input-checkbox">
-            <label for="disinfection">
-              Дезинфекция
-            </label>
-            <div class="icon-container">
-              <img src="./svg/virus1.svg" class='icon' alt="icon">
-            </div>
-          </div>
-          <div class="checkbox-wrap">
-            <input type="checkbox" id="deratization" name="deratization" class="input-checkbox">
-            <label for="deratization">
-              Дератизація
-            </label>
-            <div class="icon-container">
-              <img src="./svg/rat.svg" class='icon' alt="icon">
-            </div>
-          </div>
-          <div class="checkbox-wrap">
-            <input type="checkbox" id="disinsection" name="disinsection" class="input-checkbox">
-            <label for="disinsection">
-              Дезінсекція
-            </label>
-            <div class="icon-container">
-              <img src="./svg/insect.svg" class='icon' alt="icon">
-            </div>
-          </div>
-          <div class="checkbox-wrap">
-            <input type="checkbox" id="anouther" name="anouther" class="input-checkbox">
-            <label for="anouther">
-              Інші послуги
-            </label>
-          </div>
-      </div>
-        <div class="infobox-container">
-          <div class="infobox-wrap">
-            <input required type="name" autocomplete="off" id="name" name="name" class="input-infobox">
-            <label class="infobox-label" for="name">
-              Імя
-            </label>
-          </div>
-          <div class="infobox-wrap">
-            <input required type="text" id="fam" name="fam" class="input-infobox">
-            <label class="infobox-label" for="fam">
-              Фамілія
-            </label>
-          </div>
-          <div class="infobox-wrap">
-            <input required type="text" autocomplete="off" id="mail" name="mail" class="input-infobox">
-            <label class="infobox-label" for="mail">
-              Email
-            </label>
-          </div>
-        </div>
-        <div class="infobox-container">
-          <div class="infobox-wrap">
-            <input required type="text" id="number" name="number" class="input-infobox">
-            <label class="infobox-label" for="number">
-              Номер
-            </label>
-          </div>
-          <div class="infobox-wrap">
-            <input required type="text" id="housetype" name="housetype" class="input-infobox">
-            <label class="infobox-label" for="housetype">
-              Тип преміщення
-            </label>
-          </div>
-          <div class="infobox-wrap">
-            <input required min="0" type="number" id="housesize" name="housesize" class="input-infobox">
-            <label class="infobox-label" for="housesize">
-              Площа приміщення в м²
-            </label>
-          </div>
-        </div>
-        <div class="discriptio-wrap">
-          <textarea required name="discription" cols="0" rows="4"></textarea>
-          <label class="infobox-label">Опис проблеми</label>
-        </div>
-        <button class="submit">Відправити заявку</button>
-        </form>
-    </div>
-  </div>
+
     <div class="third-section">
       <div class="third-section-text">
         <h1 class="thrd-section-top"><b>Нам</b> довіряють</h1>
@@ -198,6 +110,7 @@
         </div>
       </div>
     </div>
+
     <div class="thirdpage" id="contacts">
       <div class="thirdpagewrap">
         <div class="circles">
@@ -318,24 +231,104 @@
         </div>
       </div>
     </div>
-    </div>
-  </form>
+
     <footer>
       <h1 class="hfoot">
         © Continental Ecoservice, 2020
       </h1>
     </footer>
-  </main>
-  <script>
-    const menu = document.querySelector('.mobile-full-menu');
-const burger = document.querySelector('.burger');
-const burger2 = document.querySelector('.burger2');
 
-burger.addEventListener('click', () => {
-  menu.style = 'display: flex';
-});
-burger2.addEventListener('click', () => {
-  menu.style = 'display: none';
-});
-  </script>
+    <div id='order-service-container' class="order-service-container">
+      <div class="widthcontainer">
+        <button id='order-service-btn-close' class="closebutton">
+          <img src="./svg/x.svg">
+        </button>
+        <h2 class='title'>Виберіть послугу та опешіть проблему</h2>
+        <form>
+          <div class='checkobox-container'>
+            <div class="checkbox-wrap">
+              <input type="checkbox" id="disinfection" name="disinfection" class="input-checkbox">
+              <label for="disinfection">
+                Дезинфекция
+              </label>
+              <div class="icon-container">
+                <img src="./svg/virus1.svg" class='icon' alt="icon">
+              </div>
+            </div>
+            <div class="checkbox-wrap">
+              <input type="checkbox" id="deratization" name="deratization" class="input-checkbox">
+              <label for="deratization">
+                Дератизація
+              </label>
+              <div class="icon-container">
+                <img src="./svg/rat.svg" class='icon' alt="icon">
+              </div>
+            </div>
+            <div class="checkbox-wrap">
+              <input type="checkbox" id="disinsection" name="disinsection" class="input-checkbox">
+              <label for="disinsection">
+                Дезінсекція
+              </label>
+              <div class="icon-container">
+                <img src="./svg/insect.svg" class='icon' alt="icon">
+              </div>
+            </div>
+            <div class="checkbox-wrap">
+              <input type="checkbox" id="anouther" name="anouther" class="input-checkbox">
+              <label for="anouther">
+                Інші послуги
+              </label>
+            </div>
+          </div>
+          <div class="infobox-container">
+            <div class="infobox-wrap">
+              <input placeholder=' ' minlength='12' pattern=".+@globex\.com" size="30" type="name" autocomplete="off"
+                id="name" name="name" class="input-infobox">
+              <label class="infobox-label" for="name">
+                Імя
+              </label>
+            </div>
+            <div class="infobox-wrap">
+              <input placeholder=' ' type="text" id="fam" name="fam" class="input-infobox">
+              <label class="infobox-label" for="fam">
+                Фамілія
+              </label>
+            </div>
+            <div class="infobox-wrap">
+              <input placeholder=' ' type="email" autocomplete="off" id="mail" name="mail" class="input-infobox">
+              <label class="infobox-label" for="mail">
+                Email
+              </label>
+            </div>
+          </div>
+          <div class="infobox-container">
+            <div class="infobox-wrap">
+              <input placeholder=' ' type="text" id="number" name="number" class="input-infobox">
+              <label class="infobox-label" for="number">
+                Номер
+              </label>
+            </div>
+            <div class="infobox-wrap">
+              <input placeholder=' ' type="text" id="housetype" name="housetype" class="input-infobox">
+              <label class="infobox-label" for="housetype">
+                Тип преміщення
+              </label>
+            </div>
+            <div class="infobox-wrap">
+              <input placeholder=' ' min="0" type="number" id="housesize" name="housesize" class="input-infobox">
+              <label class="infobox-label" for="housesize">
+                Площа приміщення в м²
+              </label>
+            </div>
+          </div>
+          <div class="discriptio-wrap">
+            <textarea placeholder=' ' name="discription" cols="0" rows="4"></textarea>
+            <label class="infobox-label">Опис проблеми</label>
+          </div>
+          <button class="submit">Відправити заявку</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script src='./js/main.js'></script>
 </body>
