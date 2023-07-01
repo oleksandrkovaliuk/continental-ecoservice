@@ -1,6 +1,5 @@
 .order-service-container {
   background-color: var(--bg-color);
-  padding-block: 160px;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -8,13 +7,22 @@
   right: 0;
   z-index: 1090;
   display: none;
+  overflow: auto;
 }
 .order-service-container.show {
   display: block;
 }
 .order-service-container .widthcontainer {
-  max-width: 880px;
+  max-width: 920px;
+  display: flex;
+  min-height: 100%;
+  position: relative;
   margin-inline: auto;
+  align-items: center;
+  flex-direction: column;
+}
+.order-service-container .center-block {
+  padding: 60px 20px;
   position: relative;
 }
 .order-service-container .closebutton {
@@ -233,9 +241,6 @@
   color: var(--infoboxtxt-color);
 }
 @media (max-width: 1280px) {
-  .order-service-container .widthcontainer {
-    padding-inline: 20px;
-  }
   .order-service-container .checkobox-container {
     row-gap: 30px;
     flex-wrap: wrap;
@@ -252,6 +257,10 @@
   .order-service-container .title {
     font-size: 24px;
     line-height: 64px;
+  }
+  .order-service-container .checkbox-wrap {
+    max-width: 100%;
+    width: 100%;
   }
 }
 @media (max-width: 320px) {
