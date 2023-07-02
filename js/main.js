@@ -10,6 +10,7 @@ const contactsBtn = document.querySelector('#contacts-btns');
 const contactsContainer = document.querySelector('#contacts-container');
 const contactsRemove = document.querySelector('#contacts-remove');
 const orderIncontactsremove = document.querySelector('#orderservice-contacts');
+const closePageSvg = document.querySelector('#closepage-svg');
 
 burger.addEventListener('click', () => {
   menu.style = 'display: flex';
@@ -41,6 +42,9 @@ orderIncontactsremove.addEventListener('click', () => {
   contactsContainer.classList.remove('show');
   orderServiceContainer.classList.add('show');
 });
+closePageSvg.addEventListener('click' , () => {
+  contactsContainer.classList.remove('show');
+})
 
 const monthBtn = document.querySelector('#month');
 const annualBtn = document.querySelector('#annual');

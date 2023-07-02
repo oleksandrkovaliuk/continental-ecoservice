@@ -303,12 +303,13 @@
   flex-direction: column;
   justify-content: center;
   margin-inline: auto;
-  gap: 22px;
-  padding: 12px 24px;
+  padding: 0px 24px 12px 24px;
   border-radius: 28px 28px 0px 0px;
   background-color: var(--text-color);
 }
-
+.closepage-svg{
+  padding:12px;
+}
 .contact-wrap .contactsbutton-wrap {
   width: 100%;
 }
@@ -362,7 +363,7 @@
   text-decoration: none;
 }
 
-.contactsbutton-wrap a {
+.contactsbutton-wrap button {
   text-decoration: none;
 }
 
